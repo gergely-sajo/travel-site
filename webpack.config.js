@@ -24,6 +24,8 @@ module.exports = {
         // allows webpack to inject our CSS and JS into the browsers memory on the fly, without a refresh
         hot: true,
         port: 3000,
+        // be able to see the project also in other devices with "local IP:3000" written in the browser
+        host: '0.0.0.0'
     },
     // needed to add the mode so we dont get a warning in the terminal
     mode: 'development',
