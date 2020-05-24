@@ -15,10 +15,18 @@ module.exports = {
         filename: 'bundled.js',
         path: path.resolve(__dirname, 'app')
     },
+    // webpack-dev-server
+    devServer: {
+        before: function(app, server) {
+            server._watch('./app/**/*.html')
+        },
+        contentBase: path.join(__dirname, 'app'),
+        // allows webpack to inject our CSS and JS into the browsers memory on the fly, without a refresh
+        hot: true,
+        port: 3000,
+    },
     // needed to add the mode so we dont get a warning in the terminal
     mode: 'development',
-    // watchin continuously what we do so no need to refresh the browser
-    watch: true,
     // we have to add the module to tell webpack what to do with files if it encounters them
     module: {
         rules: [
