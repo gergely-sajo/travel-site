@@ -23,7 +23,7 @@ class ClientArea {
         }).catch(() => {
             this.contentArea.innerHTML == `<p class="client-area__error">That password is incorrect. Try again.</p>`
             this.field.value = ""
-            this.field.focu()
+            this.field.focus()
         })
     }
 
