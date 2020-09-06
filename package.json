@@ -11,8 +11,8 @@
     "lazysizes": "^5.2.2",
     "lodash": "^4.17.15",
     "normalize.css": "^8.0.1",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
